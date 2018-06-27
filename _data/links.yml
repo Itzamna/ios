@@ -1,0 +1,48 @@
+- url: index
+  alt: Главная
+  ico: fa-home
+  
+- url: complex
+  alt: Комплексы
+  ico: fa-certificate
+  submenu:
+  - alt: Физика 7
+    url: comlex/physic-7
+
+  - alt: Физика 8
+    url: comlex/physic-8
+    
+  - alt: Физика 9
+    url: comlex/physic-9
+        
+- url: classes
+  alt: Классы
+  ico: fa-file-text-o
+  submenu:
+  - alt: 7 А
+    url: class/7-a
+
+  - alt: 7 Б
+    url: class/7-b
+    
+  - alt: 8 А
+    url: class/8-a
+    
+  - alt: 8 Б
+    url: class/8-b
+    
+  - alt: 9 А
+    url: class/9-a
+    
+  - alt: 9 Б
+    url: class/9-b    
+    
+- url: notice
+  alt: Уведомления
+  ico: fa-envelope-o
+    
+- url: settings
+  alt: Настройки
+  ico: fa-cogs
+    
+

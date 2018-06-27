@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="ru" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="ru" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="ru"> <!--<![endif]-->
+<head>
+  {% include head.html %}
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header-v7 header-left-v7">
+			<nav class="navbar navbar-default mCustomScrollbar" role="navigation" data-mcs-theme="minimal-dark">
+				<div class="menu-container">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<div class="logo">
+						<a href="index.html">
+							<!--<img id="logo-header" src="{{ site.url }}/assets/img/logo-spitz1-1.png" alt="НКП Немецкий шпиц">-->
+						</a>            
+					</div>
+				</div>
+
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+          
+            {% include menu.html %}
+				</div>
+			</nav>
+		</div>
+
+	<div class="content-side-right">
+      <div class="translater pull-right">
+        <div id="google_translate_element"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'de,en,es,fi,fr,it,no,sv', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>        
+      </div>
+      <div class="container content" >
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="title-box-v2">
+              <h2><span class="color-green">{{ title }}</span></h2>
+            </div>
+          </div> 
+          <div class="col-md-3">
+              <img src="{{ site.url }}/assets/img/rkf-logo.png" width="100px">
+          </div>    
+        </div>
+      </div>
+
+
+      <div class="container content  entry-content margin-bottom-10" >
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-box-v2">
+              {{ content }}
+          </div>
+        </div>
+      </div>      
+      
+    </div>
+	</div>
+
+
+	<!-- JS Global Compulsory -->
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- JS Implementing Plugins -->
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/back-to-top.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/jquery-appear.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/jquery.parallax.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/counter/waypoints.min.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/counter/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!-- JS Customization -->
+	<script type="text/javascript" src="{{ site.url }}/assets/js/custom.js"></script>
+	<!-- JS Page Level -->
+	<script type="text/javascript" src="{{ site.url }}/assets/js/app.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/js/plugins/progress-bar.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/js/plugins/owl-carousel.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="{{ site.url }}/assets/js/plugins/fancy-box.js"></script>
+ 	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			App.init();
+			FancyBox.initFancybox();
+			StyleSwitcher.initStyleSwitcher();
+		});
+	</script>   
+  
+	<script type="text/javascript" src="{{ site.url }}/assets/js/plugins/style-switcher.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			App.init();
+			App.initCounter();
+			App.initParallaxBg();
+			App.initScrollBar();
+			FancyBox.initFancybox();
+			App.initSidebarMenuDropdown();
+			OwlCarousel.initOwlCarousel();
+			StyleSwitcher.initStyleSwitcher();
+			ProgressBar.initProgressBarHorizontal();
+		});
+	</script>
+  <script src="{{ site.url }}/assets/js/mousetrap.min.js?a4098"></script>
+  <script>
+  Mousetrap.bind('ctrl+shift+k', function(e) {
+    window.open('https://github.com/Itzamna/ios/edit/gh-pages/{{page.path}}');
+  });
+  </script>  
+      <script type="text/javascript" src="{{ site.url }}/assets/plugins/tablesorter-master/dist/js/jquery.tablesorter.min.js"></script>
+      <script type="text/javascript" src="{{ site.url }}/assets/plugins/tablesorter-master/dist/js/jquery.tablesorter.widgets.min.js"></script> 
+  	<script>
+	$(function(){
+		$('#Mysorter').tablesorter();
+	});
+
+	</script>
+	<!--[if lt IE 9]>
+	<script src="{{ site.url }}/assets/plugins/respond.js"></script>
+	<script src="{{ site.url }}/assets/plugins/html5shiv.js"></script>
+	<script src="{{ site.url }}/assets/plugins/placeholder-IE-fixes.js"></script>
+	<![endif]-->
+</body>
+</html>
