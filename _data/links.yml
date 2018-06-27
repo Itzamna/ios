@@ -7,13 +7,13 @@
   ico: fa-certificate
   submenu:
   - alt: Физика 7
-    url: comlex/physic-7
+    url: complex/physic-7
 
   - alt: Физика 8
-    url: comlex/physic-8
+    url: complex/physic-8
     
   - alt: Физика 9
-    url: comlex/physic-9
+    url: complex/physic-9
         
 - url: classes
   alt: Классы
