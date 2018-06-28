@@ -386,7 +386,7 @@ a.disabled:hover {
   cursor: default  !important;  /* устанавливаем курсор в виде стрелки */
   color: #555  !important;
 }
-.header-v7 .navbar-default .navbar-nav > li:hover > a {
+.header-v7 .navbar-default .navbar-nav > li:hover > a.disabled {
   pointer-events: none !important; /* делаем ссылку некликабельной */
   cursor: default  !important;  /* устанавливаем курсор в виде стрелки */
   color: #555  !important;
