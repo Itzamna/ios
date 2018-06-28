@@ -375,3 +375,20 @@ font-weight: 700;
   font-size: 14px;
   padding:10px;
 }
+
+a.disabled {
+  pointer-events: none !important; /* делаем ссылку некликабельной */
+  cursor: default  !important;  /* устанавливаем курсор в виде стрелки */
+    color: #555;
+  }
+a.disabled:hover {
+  pointer-events: none !important; /* делаем ссылку некликабельной */
+  cursor: default  !important;  /* устанавливаем курсор в виде стрелки */
+  color: #555  !important;
+}
+.header-v7 .navbar-default .navbar-nav > li:hover > a {
+  pointer-events: none !important; /* делаем ссылку некликабельной */
+  cursor: default  !important;  /* устанавливаем курсор в виде стрелки */
+  color: #555  !important;
+
+}
