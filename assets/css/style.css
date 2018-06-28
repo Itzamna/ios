@@ -118,7 +118,7 @@ h2.sale{
     background-color: rgba(255,255,255,0.8);
 }
 .wrapper {
-  background-image: url(../img/bg/subtle_dots.png);
+  //background-image: url(../img/bg/subtle_dots.png);
   min-height:800px;
   width: 100%;
   height: auto;
@@ -330,3 +330,22 @@ p.catalog {
   height: 200px;
   margin: 0 auto;  
 }
+.dropdown-menu{
+  display: block !important;
+}
+.bold{
+font-weight: 700;
+}
+.color-lgreen{
+  color: #28a745;
+}
+.color-red{
+  color:#dc3545;
+} 
+
+.progress-bar-u{
+  background: #28a745 !important;
+}
+.progress-bar-red{
+  background:#dc3545  !important;
+} 

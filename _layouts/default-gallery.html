@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="ru" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="ru" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="ru"> <!--<![endif]-->
+<head>
+  {% include head-gallery.html %}
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header-v7 header-left-v7">
+			<nav class="navbar navbar-default mCustomScrollbar" role="navigation" data-mcs-theme="minimal-dark">
+				<div class="menu-container">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<div class="logo">
+						<a href="profile.html">
+							<img id="logo-header" src="{{ site.url }}/assets/img/logo.jpg" alt="">
+						</a>            
+					</div>
+				</div>
+
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+          
+            {% include menu.html %}
+				</div>
+			</nav>
+		</div>
+
+	<div class="content-side-right">
+      <div class="translater pull-right">
+        <div id="google_translate_element"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'de,en,es,fi,fr,it,no,sv', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>        
+      </div>
+      <div class="container content" >
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="title-box-v2">
+              <h2><span class="color-green">{{ page.title }}</span></h2>
+            </div>
+          </div>    
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+              {{ content }}
+          </div>
+        </div>
+      </div>      
+      
+    </div>
+	</div>
+
+  <!-- JS Global Compulsory -->
+  <script src="{{ site.url }}/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="{{ site.url }}/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+  <script src="{{ site.url }}/assets/vendor/popper.min.js"></script>
+  <script src="{{ site.url }}/assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+
+  <!-- JS Implementing Plugins -->
+  <script src="{{ site.url }}/assets/vendor/appear.js"></script>
+  <script src="{{ site.url }}/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="{{ site.url }}/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+  <script src="{{ site.url }}/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+  <script src="{{ site.url }}/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+  <script src="{{ site.url }}/assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="{{ site.url }}/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ site.url }}/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="{{ site.url }}/assets/vendor/slick-carousel/slick/slick.min.js"></script>
+
+  <!-- jQuery UI Core -->
+  <script src="{{ site.url }}/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+
+
+  <!-- jQuery UI Helpers -->
+  <script src="{{ site.url }}/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="{{ site.url }}/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+  <!-- jQuery UI Widgets -->
+  <script src="{{ site.url }}/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+  <!-- JS Unify -->
+  <script src="{{ site.url }}/assets/js1/hs.core.js"></script>
+  <script src="{{ site.url }}/assets/js1/components/hs.header.js"></script>
+  <script src="{{ site.url }}/assets/js1/helpers/hs.hamburgers.js"></script>
+  <script src="{{ site.url }}/assets/js1/components/hs.header-side.js"></script>
+  <script src="{{ site.url }}/assets/js1/components/hs.carousel.js"></script>
+  <script src="{{ site.url }}/assets/js1/components/hs.popup.js"></script>
+  <script src="{{ site.url }}/assets/js1/components/hs.autocomplete-local-search.js"></script>
+  <script src="{{ site.url }}/assets/js1/helpers/hs.shortcode-filter.js"></script>
+  <script src="{{ site.url }}/assets/js1/components/hs.go-to.js"></script>
+
+  <!-- Show / Copy Code -->
+  <script src="{{ site.url }}/assets/vendor/clipboard/dist/clipboard.min.js"></script>
+  <script src="{{ site.url }}/assets/vendor/prism/prism.core.min.js"></script>
+
+  <script src="{{ site.url }}/assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="{{ site.url }}/assets/vendor/custombox/custombox.min.js"></script>
+
+  <script src="{{ site.url }}/assets/js1/components/hs.scrollbar.js"></script>
+  <script src="{{ site.url }}/assets/js1/components/hs.modal-window.js"></script>
+  <script src="{{ site.url }}/assets/js1/helpers/hs.modal-markup.js"></script>
+  <script src="{{ site.url }}/assets/js1/components/hs.markup-copy.js"></script>
+  <script src="{{ site.url }}/assets/js1/components/hs.tabs.js"></script>
+
+  <script>
+    $(document).on('ready', function () {
+      $.HSCore.helpers.HSModalMarkup.init('.js-modal-markup');
+  
+      $.HSCore.components.HSMarkupCopy.init('.js-copy');
+    });
+  </script>
+
+
+  <!-- JS Custom -->
+  <script src="{{ site.url }}/assets/js1/custom.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of popups
+      $.HSCore.components.HSPopup.init('.js-fancybox');
+
+      // initialization of popups with media
+      $.HSCore.components.HSPopup.init('.js-fancybox-media', {
+        helpers: {
+          media: {},
+          overlay: {
+            css: {
+              'background': 'rgba(255, 255, 255, .8)'
+            }
+          }
+        }
+      });
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      $.HSCore.components.HSHeaderSide.init($('#sideNav'));
+
+      // initialization of autocomplet
+      $.HSCore.components.HSLocalSearchAutocomplete.init('#u-sidebar-navigation__search-autocomplete');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+
+
+</body>
+</html>
