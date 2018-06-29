@@ -21,7 +21,7 @@
                   </div>
                 </figcaption>
               </figure>
-              <div class="g-bg-white g-pa-25">
+              <div class="g-bg-white g-pa-5">
                   <h4 class="h5 g-color-black g-mb-5">{{ ch.alt }}</h4>
                 </div>
             </div>
@@ -30,7 +30,7 @@
         {% endfor %}	
     </div>
   </div>        
-
+<hr>
 <div class="headline"><h2>Дополнительные материалы</h2></div>
 <div id="shortcode2">
     <div class="shortcode-html">
@@ -53,7 +53,7 @@
                   </div>
                 </figcaption>
               </figure>
-              <div class="g-bg-white g-pa-25">
+              <div class="g-bg-white g-pa-5">
                   <h4 class="h5 g-color-black g-mb-5"><i class="fa {{ dp.type }}"></i>{{ dp.alt }}</h4>
                 </div>
             </div>
@@ -62,7 +62,7 @@
         {% endfor %}	
     </div>
   </div> 
-
+<hr>
 <div class="headline"><h2>Материалы к уроку</h2></div>
 <div id="shortcode2">
     <div class="shortcode-html">
@@ -85,7 +85,7 @@
                   </div>
                 </figcaption>
               </figure>
-              <div class="g-bg-white g-pa-25">
+              <div class="g-bg-white g-pa-5">
                   <h4 class="h5 g-color-black g-mb-5">{{ lm.alt }}</h4>
                 </div>
             </div>
@@ -94,15 +94,14 @@
         {% endfor %}	
     </div>
   </div>        
+<hr>
 
-
-  
 <div class="headline"><h2>Проведение урока</h2></div>
 {% for pr in page.presentations %}
 <a class="btn-u btn-u-lg btn-u-green ladda-button" data-style="contract" href="{{ pr.url }}"><span class="ladda-label">{{ pr.alt }}</span><span class="ladda-spinner"></span></a>
 {% endfor %}	
 
-
+<hr>
 <div class="headline"><h2>Отчетные материалы</h2></div>
 <div class="list-group list-group-border-0 g-mb-40">
     {% for rp in page.reports %}
