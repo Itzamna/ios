@@ -45,7 +45,17 @@
         <div class="row">
           <div class="col-md-12">
             <div class="title-box-v2  {% if page.lesson == 1  %} text-left {% endif %}">
-              <h2><span class="color-green">{{ page.title }}</span></h2>
+							<h2><span class="color-green">{{ page.title }}</span></h2>
+							<ul class="u-list-inline">
+							{% for bc in page.breadcrumbs %}
+							{% if bc.primary==0%}  							
+							<li class="list-inline-item g-mr-7"><a class="u-link-v5 g-color-main" href="{{ site.url }}/{{ bc.url }}">{{ bc.alt }}</a><i class="fa fa-angle-right g-ml-7"></i></li>
+							{% endif %}   
+							{% if bc.primary ==1%}    
+							<li class="list-inline-item g-color-primary"><span>{{ bc.alt }}</span></li>
+							{% endif %}
+							{% endfor %}	
+							</ul>
             </div>
           </div>    
         </div>

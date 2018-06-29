@@ -396,6 +396,6 @@ a.disabled:hover {
   width: 100%!important;
   border: 1px solid #dadada;
 }
-.title-box-v2.text-left {
+.title-box-v2.text-left, .btn-info.text-left {
   text-align: left !important;
 }
