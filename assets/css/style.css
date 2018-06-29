@@ -392,3 +392,10 @@ a.disabled:hover {
   color: #555  !important;
 
 }
+.w-100 {
+  width: 100%!important;
+  border: 1px solid #dadada;
+}
+.title-box-v2.pull-left {
+  text-align: left !important;
+}
