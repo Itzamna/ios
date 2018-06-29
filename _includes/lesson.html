@@ -30,7 +30,7 @@
         {% endfor %}	
     </div>
   </div>        
-<hr>
+  <div class="divider-l"></div>
 <div class="headline"><h2>Дополнительные материалы</h2></div>
 <div id="shortcode2">
     <div class="shortcode-html">
@@ -62,7 +62,7 @@
         {% endfor %}	
     </div>
   </div> 
-<hr>
+<div class="divider-l"></div>
 <div class="headline"><h2>Материалы к уроку</h2></div>
 <div id="shortcode2">
     <div class="shortcode-html">
@@ -94,14 +94,13 @@
         {% endfor %}	
     </div>
   </div>        
-<hr>
-
+  <div class="divider-l"></div>
 <div class="headline"><h2>Проведение урока</h2></div>
 {% for pr in page.presentations %}
 <a class="btn-u btn-u-lg btn-u-green ladda-button" data-style="contract" href="{{ pr.url }}"><span class="ladda-label">{{ pr.alt }}</span><span class="ladda-spinner"></span></a>
 {% endfor %}	
 
-<hr>
+<div class="divider-l"></div>
 <div class="headline"><h2>Отчетные материалы</h2></div>
 <div class="list-group list-group-border-0 g-mb-40">
     {% for rp in page.reports %}

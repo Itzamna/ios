@@ -399,7 +399,8 @@ a.disabled:hover {
 .title-box-v2.text-left, .btn-info.text-left {
   text-align: left !important;
 }
-hr {
-  margin-top: 1em;
-  margin-bottom: 1em;
+.divider-l{
+  border-top: 1px solid rgb(126, 126, 126);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
