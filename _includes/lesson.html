@@ -1,4 +1,4 @@
-<div class="headline"><h2>Учебник</h2></div>
+<div class="headline"><h2>Учебник и дополнительные материалы</h2></div>
 
   <div id="shortcode2">
     <div class="shortcode-html">
@@ -28,14 +28,7 @@
             <!-- End Team Block -->
           </div>
         {% endfor %}	
-    </div>
-  </div>        
-  <div class="divider-l"></div>
-<div class="headline"><h2>Дополнительные материалы</h2></div>
-<div id="shortcode2">
-    <div class="shortcode-html">
-      <div class="row">
-      {% for dp in page.dopmats %}
+        {% for dp in page.dopmats %}
         <div class="col-lg-2 col-sm-6">
             <!-- Team Block -->
             <div class="u-info-v6-1">
@@ -60,8 +53,10 @@
             <!-- End Team Block -->
           </div>
         {% endfor %}	
+
+
     </div>
-  </div> 
+  </div>        
 <div class="divider-l"></div>
 <div class="headline"><h2>Материалы к уроку</h2></div>
 <div id="shortcode2">
