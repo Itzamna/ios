@@ -1,0 +1,63 @@
+<section class="container">
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-9">
+        <div id="shortcode8">
+          <div class="shortcode-html">
+            <div id="carousel-08-2" class="js-carousel text-center g-mx-minus-10 u-carousel-v3" data-infinite="true" data-center-mode="true" data-slides-show="4" data-is-thumbs="true" data-nav-for="#carousel-08-1">
+              {% for gl in page.gallery %}
+              <div class="js-slide g-px-10">
+                <img class="img-fluid w-100" src="{{ site.url }}/assets/img/{{ gl.img }}" alt="{{ gl.alt }}">
+              </div>
+              {% endfor %}
+            </div>                
+            <div id="carousel-08-1" class="js-carousel text-center g-mb-20" data-infinite="true" data-arrows-classes="u-arrow-v1 g-absolute-centered--y g-width-35 g-height-40 g-font-size-18 g-color-gray g-bg-white g-mt-minus-10" data-arrow-left-classes="fa fa-angle-left g-left-0"
+            data-arrow-right-classes="fa fa-angle-right g-right-0" data-nav-for="#carousel-08-2">
+            {% for gl in page.gallery %}
+              <div class="js-slide">
+                <a class="js-fancybox d-block g-pos-rel" href="javascript:;" data-fancybox="lightbox-gallery--08-1" data-src="{{ site.url }}/assets/img/{{ gl.img }}" data-is-thumbs="true" data-nav-for="#carousel-08-1" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000"
+                data-overlay-blur-bg="true">
+                <img class="img-fluid w-100" src="{{ site.url }}/assets/img/{{ gl.img }}" alt="{{ gl.alt }}">            
+              </a>
+              <span class="g-bottom-20"></span>
+              {% if page.teacher == 1%}
+               <p class="well text-left">{{ gl.comment }}</p>
+              {% endif %}   
+              </div>
+            {% endfor %}
+            </div>
+          </div>
+
+          <div class="shortcode-styles">
+            <!-- CSS Implementing Plugins -->
+            <link type="text/plain" rel="stylesheet" href="{{ site.url }}/assets/vendor/icon-hs/style.css">
+            <link type="text/plain" rel="stylesheet" href="{{ site.url }}/assets/vendor/fancybox/jquery.fancybox.min.css">
+            <link type="text/plain" rel="stylesheet" href="{{ site.url }}/assets/vendor/slick-carousel/slick/slick.css">
+          </div>
+
+          <div class="shortcode-scripts">
+            <!-- JS Implementing Plugins -->
+            <script type="text/plain" src="{{ site.url }}/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+            <script type="text/plain" src="{{ site.url }}/assets/vendor/slick-carousel/slick/slick.js"></script>
+
+            <!-- JS Unify -->
+            <script type="text/plain" src="{{ site.url }}/assets/js1/components/hs.popup.js"></script>
+            <script type="text/plain" src="{{ site.url }}/assets/js1/components/hs.carousel.js"></script>
+
+            <!-- JS Plugins Init. -->
+            <script type="text/plain">
+              $(document).on('ready', function () {
+                // initialization of popups
+                $.HSCore.components.HSPopup.init('.js-fancybox');
+
+                // initialization of carousel
+                $.HSCore.components.HSCarousel.init('.js-carousel');
+              });
+            </script>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>

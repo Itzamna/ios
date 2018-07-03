@@ -396,11 +396,18 @@ a.disabled:hover {
   width: 100%!important;
   border: 1px solid #dadada;
 }
-.title-box-v2.text-left, .btn-info.text-left {
+.title-box-v2.text-left, .btn-info.text-left, .well.text-left {
   text-align: left !important;
 }
 .divider-l{
   border-top: 1px solid rgb(126, 126, 126);
   margin-top: 1em;
   margin-bottom: 1em;
+}
+.scroll-x {
+  overflow-x: auto; /* или scroll */
+  flex-wrap: nowrap !important;
+}
+.headline {
+  border-bottom: none !important;
 }
