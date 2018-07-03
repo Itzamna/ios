@@ -411,3 +411,6 @@ a.disabled:hover {
 .headline {
   border-bottom: none !important;
 }
+.well.gallery {
+  margin-bottom: 0px !important;
+}

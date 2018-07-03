@@ -15,14 +15,14 @@
             data-arrow-right-classes="fa fa-angle-right g-right-0" data-nav-for="#carousel-08-2">
             {% for gl in page.gallery %}
               <div class="js-slide">
+                {% if page.teacher == 1%}
+                  <h4 class="well gallery text-left">{{ gl.comment }}</h4>
+                 {% endif %}   
                 <a class="js-fancybox d-block g-pos-rel" href="javascript:;" data-fancybox="lightbox-gallery--08-1" data-src="{{ site.url }}/assets/img/{{ gl.img }}" data-is-thumbs="true" data-nav-for="#carousel-08-1" data-caption="Lightbox Gallery" data-animate-in="bounceInDown" data-animate-out="bounceOutDown" data-speed="1000"
                 data-overlay-blur-bg="true">
                 <img class="img-fluid w-100" src="{{ site.url }}/assets/img/{{ gl.img }}" alt="{{ gl.alt }}">            
               </a>
-              <span class="g-bottom-20"></span>
-              {% if page.teacher == 1%}
-               <p class="well text-left">{{ gl.comment }}</p>
-              {% endif %}   
+
               </div>
             {% endfor %}
             </div>
