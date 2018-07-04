@@ -37,13 +37,13 @@
             {% elsif gd.mark == 'process' %}
             <div class="tooltips" data-toggle="tooltip" data-original-title="Прогресс выполнения">   
               <div class="progress progress-u progress-sm">
-                <div class="progress-bar progress-bar-dark" role="progressbar" aria-valuenow="{{ gd.percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ gd.percent }}%">
+                <div class="progress-bar progress-bar-dark" role="progressbar" aria-valuenow="{{ gd.value }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ gd.value }}%">
                        
                 </div>
               </div>
             </div>    
             {% elsif gd.mark == 'autocheck' %}
-            <span class=" tooltips text-highlights text-highlights-orange rounded " data-toggle="tooltip" data-original-title="Выполнено с автопроверкой, ожидает проверки учителем">{{ gd.check }}</span>
+            <span class=" tooltips text-highlights text-highlights-orange rounded " data-toggle="tooltip" data-original-title="Выполнено с автопроверкой, ожидает проверки учителем">{{ gd.value }}</span>
             {% else %}
             {{ gd.mark }}        
             {% endif %} 
