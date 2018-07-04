@@ -20,9 +20,9 @@
       {% for dt in page.dates %}
       <tr>
         <td>
-          {% if dt.status=='off' %}
+          {% if dt.status == 'offstatus' %}
           <i class="fa fa-circle-o color-red"></i>
-          {% elsif dt.status == 'on' %}
+          {% else %}
           <span class="tooltips" data-toggle="tooltip" data-original-title="Онлайн"><i class="fa fa-circle color-lgreen"></i></span>
           {% endif %}        
         </td>
@@ -32,8 +32,8 @@
           <td>
             {% if gd.mark=='none' %}
             <span class="tooltips" data-toggle="tooltip" data-original-title="Задание не начато">-</span>
-            {% elsif gd.mark == '5' or gd.mark == '4'  or gd.mark == '3'%}
-            {{ gd.mark }} <i class="fa fa-check color-lgreen"></i>
+            {% elsif gd.mark == 'grade'%}
+            {{ gd.zn }} <i class="fa fa-check color-lgreen"></i>
             {% elsif gd.mark == 'process' %}
             <div class="tooltips" data-toggle="tooltip" data-original-title="Прогресс выполнения">   
               <div class="progress progress-u progress-sm">
