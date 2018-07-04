@@ -1,0 +1,55 @@
+<table class="table table-hover">
+  <col width="8%">
+  <col width="7%">
+  <col width="30%">
+  <col width="15%">
+  <col width="15%">
+  <col width="15%">
+  <col width="15%">
+    <thead>
+      <tr>
+        <th>Статус</th>           
+        <th>№ п/п</th>     
+        <th>ФИО</th>
+        {% for ls in page.lessons %}
+          <th>{{ ls.date }}<br>{{ ls.number }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for dt in page.dates %}
+      <tr>
+        <td>
+          {% if dt.status=='off' %}
+          <i class="fa fa-circle-o color-red"></i>
+          {% elsif dt.status == 'on' %}
+          <span class="tooltips" data-toggle="tooltip" data-original-title="Онлайн"><i class="fa fa-circle color-lgreen"></i></span>
+          {% endif %}        
+        </td>
+        <td>{{ dt.number }}</td>
+        <td>{{ dt.name }}</td>
+          {% for gd in dt.grades %}
+          <td>
+            {% if gd.mark=='none' %}
+            <span class="tooltips" data-toggle="tooltip" data-original-title="Задание не начато">-</span>
+            {% elsif gd.mark == '5' or gd.mark == '4'  or gd.mark == '3'%}
+            {{ gd.mark }} <i class="fa fa-check color-lgreen"></i>
+            {% elsif gd.mark == 'process' %}
+            <div class="tooltips" data-toggle="tooltip" data-original-title="Прогресс выполнения">   
+              <div class="progress progress-u progress-sm">
+                <div class="progress-bar progress-bar-dark" role="progressbar" aria-valuenow="{{ gd.percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ gd.percent }}%">
+                       
+                </div>
+              </div>
+            </div>    
+            {% elsif gd.mark == 'autocheck' %}
+            <span class=" tooltips text-highlights text-highlights-orange rounded " data-toggle="tooltip" data-original-title="Выполнено с автопроверкой, ожидает проверки учителем">{{ gd.check }}</span>
+            {% else %}
+            {{ gd.mark }}        
+            {% endif %} 
+          </td>
+        {% endfor %}
+      {% endfor %}
+
+    </tbody>
+  </table>

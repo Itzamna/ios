@@ -14,64 +14,55 @@ breadcrumbs:
 - alt: 7 А
   url: 7-a.html
   primary: 1
+
+lessons:
+  - date: 24.03.2018
+    number: Урок 15
+  - date: 26.03.2018
+    number: Урок 16
+  - date: 28.03.2018
+    number: Урок 17
+  - date: 30.03.2018
+    number: Урок 18 
+    
+dates:
+  - status: on
+    number: 1
+    name: Васечкин Антон Дмитриевич
+    grades:
+      - mark: none
+      - mark: 5 
+      - mark: autocheck
+        check: 5/5       
+      - mark: process
+        percent: 40
+        
+  - status: off
+    number: 2
+    name: Гендальф Сергей Сергеевич
+    grades:
+      - mark: 4
+      - mark: 5 
+      - mark: autocheck
+        check: 4/5       
+      - mark: none  
+      
+  - status: on
+    number: 3
+    name: Дмитриева Анна Александровна
+    grades:
+      - mark: 3
+      - mark: 2 
+      - mark: none
+        check: 4/5       
+      - mark: process
+        percent: 60    
+      
 ---
-<table class="table table-hover">
-  <col width="8%">
-  <col width="7%">
-  <col width="30%">
-  <col width="15%">
-  <col width="15%">
-  <col width="15%">
-  <col width="15%">
-    <thead>
-      <tr>
-        <th>Статус</th>           
-        <th>№ п/п</th>     
-        <th>ФИО</th>
-        <th>24.03.2018<br>§28</th>
-        <th>25.02.2018<br>§29</th>
-        <th>26.02.2018<br>§30</th>
-        <th>27.02.2018<br>§31</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><i class="fa fa-circle-o color-red"></i></td>
-        <td>1 </td>
-        <td>Васечкин Антон Дмитриевич</td>
-        <td><span class="tooltips" data-toggle="tooltip" data-original-title="Задание не начато">-</span></td>
-        <td><span class="tooltips" data-toggle="tooltip" data-original-title="Задание не начато">-</span></td>
-        <td>3 <i class="fa fa-check color-lgreen"></i></td>
-        <td><span class="tooltips" data-toggle="tooltip" data-original-title="Задание не начато">-</span></td>
-      </tr>
-      <tr>
-        <td><span class="tooltips" data-toggle="tooltip" data-original-title="Онлайн"><i class="fa fa-circle color-lgreen"></i></span></td>
-        <td>2 </td>
-        <td>Гендальф Сергей Сергеевич</td>
-        <td>3 <i class="fa fa-check color-lgreen"></i></td>      
-        <td>5 <i class="fa fa-check color-lgreen"></i></td>
-        <td>4 <i class="fa fa-check color-lgreen"></i></td>
-        <td >
-          <div class="tooltips" data-toggle="tooltip" data-original-title="Прогресс выполнения">   
-            <div class="progress progress-u progress-sm">
-              <div class="progress-bar progress-bar-dark" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                     
-              </div>
-            </div>
-          </div>
-          </td>        
+{% include class.html %}
 
-      </tr>    
-      <tr>
-        <td><span class="tooltips" data-toggle="tooltip" data-original-title="Онлайн"><i class="fa fa-circle color-lgreen"></i></span></td>
-        <td>3 </td>
-        <td>Дмитриева Анна Александровна</td>
-        <td>3 <i class="fa fa-check color-lgreen"></i></td>
-        <td>4 <i class="fa fa-check color-lgreen"></i></td>
-        <td><span class="tooltips" data-toggle="tooltip" data-original-title="Задание не начато">-</span></td>
-        <td><span class=" tooltips text-highlights text-highlights-orange rounded " data-toggle="tooltip" data-original-title="Выполнено с автопроверкой, ожидает проверки учителем">9/9</span></td>           
-
-      </tr>             
+   
+        <table>      
       <tr>
         <td><i class="fa fa-circle-o color-red"></i></td>
         <td>4 </td>
