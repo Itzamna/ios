@@ -91,14 +91,42 @@
   </div>        
   <div class="divider-l"></div>
 <div class="headline"><h2>Проведение урока</h2></div>
-{% for pr in page.presentations %}
-<a class="btn-u btn-u-lg btn-u-green ladda-button" data-style="contract" href="{{ pr.url }}"><span class="ladda-label">{{ pr.alt }}</span><span class="ladda-spinner"></span></a>
-{% endfor %}	
-
+<div class="row scroll-x">
+  {% for pr in page.presentations %}
+  <div class="col-lg-2 col-sm-4">
+    <a class="btn-u btn-u-lg btn-u-green ladda-button classbutton text-center" data-style="contract" href="{{ pr.url }}"><span class="ladda-label">{{ pr.alt }}</span><span class="ladda-spinner"></span></a>
+  </div>
+  {% endfor %}	
+</div>
 <div class="divider-l"></div>
 <div class="headline"><h2>Отчетные материалы</h2></div>
-<div class="list-group list-group-border-0 g-mb-40">
-    {% for rp in page.reports %}
-    <a href="{{ rp.url }}" class="list-group-item list-group-item-action justify-content-between"><span>{{ rp.alt }}</span></a>
-    {% endfor %}
+<div id="shortcode2">
+  <div class="shortcode-html">
+    <div class="row scroll-x">
+      {% for rp in page.reports %}
+      <div class="col-lg-2 col-sm-4">
+          <!-- Team Block -->
+          <div class="u-info-v6-1">
+            <figure class="u-block-hover">
+             <img class="w-100" src="{{ site.url }}/assets/img/physic7/{{ rp.img }}" alt="{{ rp.alt }}">
+              <figcaption class="u-block-hover__additional--fade g-bg-primary-opacity-0_9 g-pa-30">
+                <div class="u-block-hover__additional--fade u-block-hover__additional--fade-down g-flex-middle">
+                  <ul class="list-inline text-center g-flex-middle-item">
+                    <li class="list-inline-item align-middle g-mx-3">
+                      <a class="u-icon-v2 u-icon-size--sm g-font-size-default g-color-white g-color-black--hover g-brd-white g-bg-white--hover rounded-circle" href="{{ rp.url }}">
+                        <i class="fa fa-link"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="g-bg-white g-pa-5">
+                <h4 class="h5 g-color-black g-mb-5">{{ rp.alt }}</h4>
+              </div>
+          </div>
+          <!-- End Team Block -->
+        </div>
+      {% endfor %}	
   </div>
+</div>  
