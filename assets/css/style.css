@@ -414,7 +414,7 @@ a.disabled:hover {
 .well.gallery {
   margin-bottom: 0px !important;
 }
-a.classbutton {
+a.btn-u.classbutton {
   width: width: 100% !important;
   display: block;
   padding-top: 0.5em;
